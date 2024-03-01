@@ -10,8 +10,8 @@ Ce projet consiste en la conception et le développement d'un formulaire de cont
 
 ## Installation
 
-1. Clonez le dépôt GitHub :
-2. Installez les dépendances avec Composer :
+1. Clonez le dépôt GitHub : `git clone https://github.com/Munderstand101/PC-EPSI-SBD-SecureContactForm.git`
+2. Installez les dépendances avec Composer : `composer install`
 3. Configurez votre base de données dans le fichier `.env`.
 4. Créez la base de données et exécutez les migrations :
 5. Lancez le serveur Symfony : `symfony serve -d`
