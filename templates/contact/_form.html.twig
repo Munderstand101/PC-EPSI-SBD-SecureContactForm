@@ -1,0 +1,20 @@
+{#{{ form_start(form) }}#}
+{#    {{ form_widget(form) }}#}
+{#    <button class="btn">{{ button_label|default('Save') }}</button>#}
+{#{{ form_end(form) }}#}
+<div class="col-md-6 offset-md-3">
+    <h1 class="mt-5 mb-4">Create new Contact</h1>
+    {{ form_start(form, {'attr': {'class': 'form'}}) }}
+    <div class="mb-3">
+        {{ form_widget(form.name, {'attr': {'class': 'form-control', 'placeholder': 'Name'}}) }}
+    </div>
+    <div class="mb-3">
+        {{ form_widget(form.email, {'attr': {'class': 'form-control', 'placeholder': 'Email'}}) }}
+    </div>
+    <div class="mb-3">
+        {{ form_widget(form.message, {'attr': {'class': 'form-control', 'placeholder': 'Message', 'rows': 5}}) }}
+    </div>
+    <button type="submit" class="btn btn-primary">{{ button_label|default('Save') }}</button>
+    {{ form_end(form) }}
+    <a href="{{ path('app_contact_index') }}" class="btn btn-secondary mt-3">Back to list</a>
+</div>
